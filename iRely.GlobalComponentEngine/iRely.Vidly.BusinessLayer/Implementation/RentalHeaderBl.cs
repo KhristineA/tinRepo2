@@ -11,7 +11,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class RentalHeaderBl : BusinessLayer<tblVMRentalHeader>, IRentalHeaderBl
     {
-        public RentalHeaderBl(IRepository db) : base(db)
+        public RentalHeaderBl(IVidlyRepository db) : base(db)
         {
         }
     }

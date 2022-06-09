@@ -11,7 +11,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class MembershipTypeBl : BusinessLayer<tblVMMembershipType>, IMembershipTypeBl
     {
-        public MembershipTypeBl(IRepository db) : base(db)
+        public MembershipTypeBl(IVidlyRepository db) : base(db)
         {
         }
     }

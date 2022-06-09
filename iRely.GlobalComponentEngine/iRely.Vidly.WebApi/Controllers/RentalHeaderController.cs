@@ -8,22 +8,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.ModelBinding;
 
 namespace iRely.Vidly.WebApi.Controllers
 {
-    public class CustomerController : BaseApiController<tblVMCustomer>
+    public class RentalHeaderController : BaseApiController<tblVMRentalHeader>
     {
-        private ICustomerBl _bl;
+        private IRentalHeaderBl _bl;
 
-        public CustomerController(ICustomerBl bl) : base(bl)
+        public RentalHeaderController(IRentalHeaderBl bl) : base(bl)
         {
             _bl = bl;
         }
 
-        public CustomerController() : base(new CustomerBl(new VidlyRepository()))
+        public RentalHeaderController() : base(new RentalHeaderBl(new VidlyRepository()))
         {
 
         }

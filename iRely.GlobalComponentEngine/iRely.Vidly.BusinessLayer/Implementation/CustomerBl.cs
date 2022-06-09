@@ -12,7 +12,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class CustomerBl : BusinessLayer<tblVMCustomer>, ICustomerBl
     {
-        public CustomerBl(IRepository db) : base(db)
+        public CustomerBl(IVidlyRepository db) : base(db)
         {
         }
     }

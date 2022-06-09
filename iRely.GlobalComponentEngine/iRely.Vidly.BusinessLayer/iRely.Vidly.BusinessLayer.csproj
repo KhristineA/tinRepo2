@@ -88,6 +88,7 @@
     <Compile Include="Implementation\MovieBl.cs" />
     <Compile Include="Implementation\RentalDetailBl.cs" />
     <Compile Include="Implementation\RentalHeaderBl.cs" />
+    <Compile Include="Interface\IVidlyRepository.cs" />
     <Compile Include="VidlyRepository.cs" />
     <Compile Include="Interface\ICustomerBl.cs" />
     <Compile Include="Interface\IGenreBl.cs" />

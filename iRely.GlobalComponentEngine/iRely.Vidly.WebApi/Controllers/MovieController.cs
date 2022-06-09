@@ -1,4 +1,6 @@
 ﻿using iRely.Common;
+using iRely.Vidly.BusinessLayer;
+using iRely.Vidly.BusinessLayer.Implementation;
 using iRely.Vidly.BusinessLayer.Interface;
 using iRely.Vidly.Model.Metadata;
 using System;
@@ -15,6 +17,10 @@ namespace iRely.Vidly.WebApi.Controllers
         public MovieController(IMovieBl bl) : base(bl)
         {
             _bl = bl;
+        }
+        public MovieController() : base(new MovieBl(new VidlyRepository()))
+        {
+
         }
     }
 }

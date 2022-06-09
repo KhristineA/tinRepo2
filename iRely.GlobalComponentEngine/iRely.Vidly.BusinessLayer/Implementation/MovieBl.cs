@@ -11,7 +11,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class MovieBl : BusinessLayer<tblVMMovie>, IMovieBl
     {
-        public MovieBl(IRepository db) : base(db)
+        public MovieBl(IVidlyRepository db) : base(db)
         {
         }
     }

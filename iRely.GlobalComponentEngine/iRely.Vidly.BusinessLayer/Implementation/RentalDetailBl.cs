@@ -11,7 +11,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class RentalDetailBl : BusinessLayer<tblVMRentalDetail>, IRentalDetailBl
     {
-        public RentalDetailBl(IRepository db) : base(db)
+        public RentalDetailBl(IVidlyRepository db) : base(db)
         {
         }
     }

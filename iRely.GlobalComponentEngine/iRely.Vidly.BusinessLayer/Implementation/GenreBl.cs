@@ -11,7 +11,7 @@ namespace iRely.Vidly.BusinessLayer.Implementation
 {
     public class GenreBl : BusinessLayer<tblVMGenre>, IGenreBl
     {
-        public GenreBl(IRepository db) : base(db)
+        public GenreBl(IVidlyRepository db) : base(db)
         {
         }
     }
