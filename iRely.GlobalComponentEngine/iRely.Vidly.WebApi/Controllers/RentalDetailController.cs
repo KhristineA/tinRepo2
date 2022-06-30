@@ -6,19 +6,22 @@ using iRely.Vidly.Model.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
 namespace iRely.Vidly.WebApi.Controllers
 {
-    public class MovieController : BaseApiController<tblVMMovie>
+    public class RentalDetailController : BaseApiController<tblVMRentalDetail>
     {
-        private IMovieBl _bl;
-        public MovieController(IMovieBl bl) : base(bl)
+        private IRentalDetailBl _bl;
+
+        public RentalDetailController(IRentalDetailBl bl) : base(bl)
         {
             _bl = bl;
         }
-        //public MovieController() : base(new MovieBl(new VidlyRepository()))
+
+        //public RentalDetailController() : base(new RentalDetailBl(new VidlyRepository()))
         //{
 
         //}

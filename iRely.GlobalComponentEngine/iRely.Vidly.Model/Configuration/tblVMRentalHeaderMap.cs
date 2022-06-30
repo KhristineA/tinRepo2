@@ -14,6 +14,7 @@ namespace iRely.Vidly.Model.Configuration
         {
             this.HasKey(t => t.intRentalHeaderId);
             this.ToTable("tblVMRentalHeader");
+            this.HasMany(x => x.tblVMRentalDetail).WithRequired().HasForeignKey(t => t.intRentalHeaderId);
         }
     }
 }

@@ -13,6 +13,8 @@ namespace iRely.Vidly.Model.Configuration
         public tblVMGenreMap()
         {
             this.HasKey(t => t.intGenreId);
+            this.Property(x => x.strGenreName)
+                .HasColumnName("strName");
             this.ToTable("tblVMGenre");
         }
     }

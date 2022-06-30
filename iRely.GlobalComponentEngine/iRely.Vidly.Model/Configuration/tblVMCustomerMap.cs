@@ -14,6 +14,8 @@ namespace iRely.Vidly.Model.Configuration
         public tblVMCustomerMap()
         {
             this.HasKey(t => t.intCustomerId);
+            this.Property(x => x.strCustomerName)
+                .HasColumnName("strName");
             this.ToTable("tblVMCustomer");
         }
     }

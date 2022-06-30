@@ -23,9 +23,9 @@ namespace iRely.Vidly.WebApi.Controllers
             _bl = bl;
         }
 
-        public CustomerController() : base(new CustomerBl(new VidlyRepository()))
-        {
+        //public CustomerController() : base(new CustomerBl(new VidlyRepository()))
+        //{
 
-        }
+        //}
     }
 }

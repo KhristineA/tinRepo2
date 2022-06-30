@@ -21,9 +21,9 @@ namespace iRely.Vidly.WebApi.Controllers
             _bl = bl;
         }
 
-        public RentalHeaderController() : base(new RentalHeaderBl(new VidlyRepository()))
-        {
+        //public RentalHeaderController() : base(new RentalHeaderBl(new VidlyRepository()))
+        //{
 
-        }
+        //}
     }
 }

@@ -13,10 +13,10 @@ namespace iRely.Vidly.Model.Metadata
         public int intCustomerId { get; set; }
         [Required]
         [StringLength(255)]
-        public string strName { get; set; }
+        [Column("strName")]
+        public string strCustomerName { get; set; }
 
         public bool ysnIsSubscribedToNewsletter { get; set; }
-
         public tblVMMembershipType tblVMMembershipType { get; set; }
         [NotMapped]
         public string strMembershipTypeName { get; set; }

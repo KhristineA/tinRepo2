@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,13 +14,15 @@ namespace iRely.Vidly.Model.Metadata
 
         [Required]
         [StringLength(255)]
-        public string strName { get; set; }
+        [Column("strName")]
+        public string strMovieName { get; set; }
 
         public tblVMGenre tblVMGenre { get; set; }
 
-
         [Required]
         public int intGenreId { get; set; }
+        [NotMapped]
+        public string strGenreName { get; set; }
 
         public DateTime dtmDateAdded { get; set; }
 

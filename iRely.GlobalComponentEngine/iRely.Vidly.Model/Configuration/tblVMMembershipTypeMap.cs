@@ -13,6 +13,8 @@ namespace iRely.Vidly.Model.Configuration
         public tblVMMembershipTypeMap()
         {
             this.HasKey(t => t.intMembershipTypeId);
+            this.Property(x => x.strMembershipTypeName)
+                .HasColumnName("strName");
             this.ToTable("tblVMMembershipType");
         }
         

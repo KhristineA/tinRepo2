@@ -13,6 +13,8 @@ namespace iRely.Vidly.Model.Configuration
         public tblVMMovieMap()
         {
             this.HasKey(t => t.intMovieId);
+            this.Property(x => x.strMovieName)
+                .HasColumnName("strName");
             this.ToTable("tblVMMovie");
         }
     }

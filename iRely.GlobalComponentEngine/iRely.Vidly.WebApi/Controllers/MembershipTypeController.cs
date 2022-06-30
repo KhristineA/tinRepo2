@@ -1,4 +1,6 @@
 ﻿using iRely.Common;
+using iRely.Vidly.BusinessLayer;
+using iRely.Vidly.BusinessLayer.Implementation;
 using iRely.Vidly.BusinessLayer.Interface;
 using iRely.Vidly.Model.Metadata;
 using System;
@@ -17,5 +19,9 @@ namespace iRely.Vidly.WebApi.Controllers
         {
             _bl = bl;
         }
+        //public MembershipTypeController() : base(new MembershipTypeBl(new VidlyRepository()))
+        //{
+
+        //}
     }
 }
